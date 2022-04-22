@@ -5,10 +5,11 @@ import { Header } from './Header'
 import "normalize.css"
 import "../assets/css/main.css"
 
-export const Layout = () => {
+export const Layout = ({children}) => {
   return(
     <>
       <Header/>
+      {children}
       <Footer/>
     </>
   )
