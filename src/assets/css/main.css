@@ -140,6 +140,11 @@ ul {
 a {
   text-decoration: none;
 }
+video {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
 .img {
   width: 100%;
   display: block;
@@ -333,6 +338,13 @@ form > *:last-child {
 /*#########*/
 
 /*#########*/
+/* Header */
+/*#########*/
+header {
+  background-color: rgb(54,64,55);
+}
+
+/*#########*/
 /* Navbar */
 /*#########*/
 .navbar {
@@ -376,7 +388,7 @@ form > *:last-child {
   text-align: center;
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: var(--grey-1000);
+  color: var(--white);
   letter-spacing: var(--letterSpacing);
   padding: 1rem 0;
   border-top: 1px solid var(--grey-500);
@@ -438,4 +450,136 @@ form > *:last-child {
 .footer {
   width: 100%;
   align-items: center;
+}
+
+/*#########*/
+/* Main */
+/*#########*/
+
+.videoSection {
+  position: relative;
+  height: calc(100vh);
+}
+
+.aboutMeCard {
+  position: absolute;
+  z-index: 10;
+  left: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 209px;
+  height: 252px;
+  background-color: rgb(152,108,67);
+  padding-top: 10px;
+}
+
+.aboutMeCard_title {
+  margin: 0;
+  color: var(--white);
+  font-size: 30px;
+  text-align: center;
+}
+
+.aboutMeCard_text {
+  margin: 0;
+  color: var(--white);
+  font-size: 17px;
+  text-align: center;
+}
+
+/*#########*/
+/* FeaturePost */
+/*#########*/
+
+.featurePost {
+  margin-top: -150px;
+  position: relative;
+  z-index: 20;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  min-height: 320px;
+  background-color: rgb(54, 64, 55);
+  color: var(--white);
+  padding: 20px 20px;
+}
+
+.featurePost_wrapper {
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.featurePost_imageWrapper {
+  width: 48%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.featurePost_textWrapper {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featurePost_date {
+  margin: 0;
+  font-size: 12px;
+}
+
+.featurePost_article {
+  color: var(--white);
+}
+
+.featurePost_article:hover {
+  color: #986C43;
+}
+
+.featurePost_text {
+  margin: 0;
+  height: 72px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.featurePost_comments {
+  color: var(--white);
+  font-size: 12px;
+  width: 100%;
+}
+
+.featurePost_comments:hover {
+  color: #986C43;
+}
+
+.featurePost_comments::before {
+  margin-bottom: 10px;
+  content: '';
+  display: block;
+  height: 1px;
+  background: var(--white);
+}
+
+.recentPosts {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepageCardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-basis: 20px;
+}
+
+.homepageCard_link {
+  color: var(--black);
+}
+
+.homepageCard_link:hover {
+  color: #986C43;
 }
