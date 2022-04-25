@@ -13,13 +13,13 @@ export const ImgMediaCard = ({item}) => {
   const {imageUrl, imageAlt, title, text, author, date} = item;
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
+      {imageUrl && <CardMedia
         component="img"
         height="194"
         image={imageUrl}
         alt={imageAlt}
-      />
-      <CardHeader
+      />}
+      {author && <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
             R
@@ -32,14 +32,14 @@ export const ImgMediaCard = ({item}) => {
         }
         title={author}
         subheader={date}
-      />
+      />}
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        {text && <Typography variant="body2" color="text.secondary">
           {text}
-        </Typography>
+        </Typography>}
       </CardContent>
     </Card>
   );
