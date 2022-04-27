@@ -9,7 +9,9 @@ export const Layout = ({children}) => {
   return(
     <>
       <Header/>
-      {children}
+      <main className='hero'>
+        {children}
+      </main>
       <Footer/>
     </>
   )

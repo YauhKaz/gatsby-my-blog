@@ -1,13 +1,15 @@
 import React from 'react'
-import {Link} from 'gatsby'
 
 import { Layout } from '../components/Layout'
+import { AboutPageCard } from '../components/AboutPageCard'
 
 const About = () => {
   return (
     <Layout>
-      <h1>About page</h1>
-      <button><Link to='/'>Back</Link></button>
+      <section className='about_wrapper'>
+        <h1 className='about_title'>About Me</h1>
+        <AboutPageCard/>
+      </section>
     </Layout>
   )
 }
