@@ -81,3 +81,36 @@ export const aboutMeParagraphs = [
   "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
   "This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.",
 ]
+
+export const socials = [
+  {
+    id: 0,
+    source: 'https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0fdef751204647a3bbd7eaa2827ed4f9.png',
+    alternative: 'Facebook',
+    link: 'https://www.facebook.com/'
+  },
+  {
+    id: 1,
+    source: 'https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png',
+    alternative: 'Instagram',
+    link: 'https://www.instagram.com/',
+  },
+  {
+    id: 2,
+    source: 'https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7d035ba85f6486680c2facedecdcf4d.png',
+    alternative: 'Twitter',
+    link: 'https://twitter.com/',
+  },
+  {
+    id: 3,
+    source: 'https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/78aa2057f0cb42fbbaffcbc36280a64a.png',
+    alternative: 'YouTube',
+    link: 'https://www.youtube.com/',
+  },
+  {
+    id: 4,
+    source: 'https://static.wixstatic.com/media/8f6f59264a094af0b46e9f6c77dff83e.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8f6f59264a094af0b46e9f6c77dff83e.png',
+    alternative: 'Pinterest',
+    link: 'https://www.facebook.com/',
+  },
+]

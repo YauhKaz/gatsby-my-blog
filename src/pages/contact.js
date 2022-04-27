@@ -1,13 +1,16 @@
 import React from 'react'
-import {Link} from 'gatsby'
 
 import { Layout } from '../components/Layout'
+import { ContactHeader } from '../components/ContactHeader'
+import { ContactForm } from '../components/ContactForm'
 
 const Contact = () => {
   return (
     <Layout>
-      <h1>Contact page</h1>
-      <button><Link to='/'>Back</Link></button>
+      <section className='contactpage'>
+        <ContactHeader/>
+        <ContactForm/>
+      </section>      
     </Layout>
   )
 }
