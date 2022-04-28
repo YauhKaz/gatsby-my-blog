@@ -2,16 +2,43 @@ export const cards = [
   {
     imageUrl: 'http://artismedia.by/blog/wp-content/uploads/2018/05/in-blog2-1.png',
     imageAlt: 'image',
-    title: 'Wild life',
-    text: 'dasaddajfhjhfaskh hsjafhafhjsfhka',
+    title: 'Mexico: A Culinary Journey',
+    text: 'Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading.',
     author: 'Admin',
     date: '25-04-2022'
   },
   {
     imageUrl: 'http://artismedia.by/blog/wp-content/uploads/2018/05/in-blog2-1.png',
     imageAlt: 'image',
-    title: 'Wild life',
-  }
+    title: '5 Tips For Budget Travelers',
+    text: 'Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading.',
+    author: 'Admin',
+    date: '25-04-2022'
+  },
+  {
+    imageUrl: 'http://artismedia.by/blog/wp-content/uploads/2018/05/in-blog2-1.png',
+    imageAlt: 'image',
+    title: '5 Tips For Budget Travelers',
+    text: 'Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading.',
+    author: 'Admin',
+    date: '25-04-2022'
+  },
+  {
+    imageUrl: 'http://artismedia.by/blog/wp-content/uploads/2018/05/in-blog2-1.png',
+    imageAlt: 'image',
+    title: '5 Tips For Budget Travelers',
+    text: 'Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading.',
+    author: 'Admin',
+    date: '25-04-2022'
+  },
+  {
+    imageUrl: 'http://artismedia.by/blog/wp-content/uploads/2018/05/in-blog2-1.png',
+    imageAlt: 'image',
+    title: '5 Tips For Budget Travelers',
+    text: 'Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading.',
+    author: 'Admin',
+    date: '25-04-2022'
+  },
 ]
 
 export const itemData = [

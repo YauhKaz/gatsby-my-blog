@@ -7,7 +7,9 @@ import Typography from '@mui/material/Typography'
 import CardMedia from '@mui/material/CardMedia'
 
 export const HomepageCard = ({item}) => {
+  
   const {imageUrl, imageAlt, title} = item;
+
   return (
     <Card sx={{ maxWidth: 240, marginRight: '20px', marginBottom: '20px' }}>
       {imageUrl && 

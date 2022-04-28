@@ -16,14 +16,16 @@ export const ContactForm = () => {
           <TextField id="email" label="Email" variant="outlined" required/>
           <TextField id="phone" label="Phone" variant="outlined" />
         </div>
-        <TextField
-          className='contactpage_textfield'
-          id="message"
-          label="Message"
-          multiline
-          rows={4}
-          defaultValue="Hi"
-        />
+        <div className='contactpage_textfieldWrapper'>
+          <TextField
+            className='contactpage_textfield'
+            id="message"
+            label="Message"
+            multiline
+            rows={4}
+            defaultValue="Hi"
+          />
+        </div>
         <Button variant="contained" className='contactpage_button'>Send</Button>
       </form>
     </div>
