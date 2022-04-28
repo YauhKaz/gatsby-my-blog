@@ -10,9 +10,16 @@ import MoreVertIcon from '@mui/icons-material/MoreVert'
 import CardMedia from '@mui/material/CardMedia'
 
 export const ImgMediaCard = ({item}) => {
+
   const {imageUrl, imageAlt, title, text, author, date} = item;
+
+  const textTransfotm = (text) => {
+    if (text.length > 100) return `${text.substr(0,100)}...`;
+    return text
+  }
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, margin: '5px'}}>
       {imageUrl && <CardMedia
         component="img"
         height="194"
@@ -38,7 +45,7 @@ export const ImgMediaCard = ({item}) => {
           {title}
         </Typography>
         {text && <Typography variant="body2" color="text.secondary">
-          {text}
+          {textTransfotm(text)}
         </Typography>}
       </CardContent>
     </Card>

@@ -825,12 +825,34 @@ header {
   margin-top: 30px;
 }
 
+.contactpage_textfieldWrapper {
+  width: 100%;
+  margin: 30px 0;
+} 
+
 .contactpage_textfield {
   width: 100%;
-  margin-top: 30px;
+  margin: 30px 0;
 } 
 
 .contactpage_button {
   width: 100%;
   margin-top: 30px;
+}
+
+.blogpage {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blogpage_cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
