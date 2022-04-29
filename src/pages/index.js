@@ -8,11 +8,13 @@ import { HomepageCard } from '../components/HomepageCard'
 import { InfoLine } from '../components/InfoLine'
 import {cards} from '../constants/Cards'
 import { HomepageImageList } from '../components/HomepageImageList'
+import { Seo } from '../components/Seo'
 
 export default function Home() {
   return (
     <Layout>
       <>
+        <Seo title='Home'/>
         <section className='videoSection'>
           <Video poster='http://artismedia.by/blog/wp-content/uploads/2018/05/in-blog2-1.png'/>
           <AboutMeCard/>
