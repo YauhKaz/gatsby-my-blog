@@ -10,7 +10,7 @@ const About = () => {
       <Seo title='About me'/>
       <section className='about_wrapper'>
         <h1 className='about_title'>About Me</h1>
-        <AboutPageCard/>
+        <AboutPageCard isRow={true}/>
       </section>
     </Layout>
   )
