@@ -22,9 +22,9 @@ export const ContactHeader = () => {
         <li>|</li>
         <ul className='contactpage_socialLinks'>
           {
-            socials.map(item => {
+            socials.map((item, index) => {
             return (
-              <li className='contactpage_socialLink'>
+              <li key={index} className='contactpage_socialLink'>
                 <Link to={item.link}>
                   <img src={item.source} alt={item.alternative} className='contactpage_image'/>
                 </Link>
