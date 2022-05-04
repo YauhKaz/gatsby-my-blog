@@ -18,8 +18,8 @@ export const HomepageImageList = () => {
   return (
     <section className='picturesList'>
       <section className='homepageImageList' style={{height: `${listHeight}px`}}>
-        {itemData.map((item) => (
-          <figure className='homepageImageList_wrapper'>
+        {itemData.map((item, index) => (
+          <figure key={index} className='homepageImageList_wrapper'>
             <CardMedia
               component="img"
               image={`${item.img}?w=164&h=164&fit=crop&auto=format`}

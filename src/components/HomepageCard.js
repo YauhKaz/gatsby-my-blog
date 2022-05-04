@@ -7,6 +7,8 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 
+import * as styles from '../assets/css/homepageCard.module.css'
+
 export const HomepageCard = ({item}) => {
   
   const {image, title} = item;
@@ -21,7 +23,7 @@ export const HomepageCard = ({item}) => {
       }
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          <Link to={`/${slug}`} className='homepageCard_link'>{title}</Link>
+          <Link to={`/${slug}`} className={styles.homepageCard_link}>{title}</Link>
         </Typography>
       </CardContent>
     </Card>

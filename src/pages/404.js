@@ -5,8 +5,7 @@ import { Layout } from '../components/Layout'
 const Error = () => {
   return (
     <Layout>
-      <h1>Page not found</h1>
-      <p>404</p>
+      <div className='errorPage'></div>
     </Layout>
   )
 }

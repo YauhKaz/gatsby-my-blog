@@ -1,0 +1,7 @@
+.homepageCard_link {
+  color: var(--black);
+}
+
+.homepageCard_link:hover {
+  color: var(--orange-dark);
+}

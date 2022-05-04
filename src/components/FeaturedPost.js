@@ -3,6 +3,8 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import slugify from 'slugify'
 
+import * as styles from '../assets/css/featuredPost.module.css'
+
 const query = graphql`
   {
     allContentfulTravels(sort: {fields: updateDate, order: DESC}) {
@@ -37,18 +39,18 @@ export const FeaturedPost = () => {
   }
 
   return (
-    <section className='featurePost'>
+    <section className={styles.featurePost}>
       <h4>Featured Post</h4>
-      <div className='featurePost_wrapper'>
-        <Link to={`/${slug}`} className='featurePost_imageWrapper'>
+      <div className={styles.featurePost_wrapper}>
+        <Link to={`/${slug}`} className={styles.featurePost_imageWrapper}>
           <GatsbyImage image={blog.image.gatsbyImageData} alt={blog.image.title}/>
         </Link>
-        <div className='featurePost_textWrapper'>
-          <div className='featurePost_articleWrapper'>
-            <p className='featurePost_date'><span>{blog.updateDate.substr(0,10)}</span> · <span>{blog.readTime} min</span></p>
-            <Link to={`/${slug}`} className='featurePost_article'>
+        <div className={styles.featurePost_textWrapper}>
+          <div>
+            <p className={styles.featurePost_date}><span>{blog.updateDate.substr(0,10)}</span> · <span>{blog.readTime} min</span></p>
+            <Link to={`/${slug}`} className={styles.featurePost_article}>
               <h4>{blog.title}</h4>
-              <p className='featurePost_text'>{textTransform(blog.description.description)}</p>
+              <p className={styles.featurePost_text}>{textTransform(blog.description.description)}</p>
             </Link>
           </div>
         </div>
