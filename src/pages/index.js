@@ -41,8 +41,8 @@ export default function Home() {
         <section className='recentPosts'>
           <h3>Recent Posts</h3>
           <div className='homepageCardWrapper'>
-            {travels && travels.map(item => {
-              return <HomepageCard id={item.id} item={item}/>
+            {travels && travels.map((item, index) => {
+              return <HomepageCard key={index} id={item.id} item={item}/>
             })}
           </div>
         </section>

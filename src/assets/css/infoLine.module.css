@@ -1,0 +1,28 @@
+.infoLine {
+  margin-top: 20px;
+  height: 280px;
+  background-color: var(--orange-dark);
+}
+
+.infoWrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-size: 20px;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.infoNumber {
+  font-size: 55px;
+}

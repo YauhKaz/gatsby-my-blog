@@ -1,0 +1,7 @@
+.imgMediaCard_link {
+  color: var(--black);
+}
+
+.imgMediaCard_link:hover {
+  color: var(--orange-dark);
+}

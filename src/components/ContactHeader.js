@@ -2,31 +2,32 @@ import React from 'react'
 import {Link} from 'gatsby'
 
 import { socials } from '../constants/Cards'
+import * as styles from '../assets/css/contactHeader.module.css'
 
 export const ContactHeader = () => {
   return (
-    <div className='contactpage_socials'>
+    <div className={styles.contactpage_socials}>
       <h3>Contact me here</h3>
-      <ul className='contactpage_socialList'>
+      <ul className={styles.contactpage_socialList}>
         <li>
-          <Link to='mailto:mail@mail.com' className='contactpage_mailTel'>
+          <Link to='mailto:mail@mail.com' className={styles.contactpage_mailTel}>
             mail@mail.com
           </Link>
         </li>
         <li>|</li>
         <li>
-          <Link to='tel:+375 12 3456789' className='contactpage_mailTel'>
+          <Link to='tel:+375 12 3456789' className={styles.contactpage_mailTel}>
             +375 12 3456789
           </Link>  
         </li>
         <li>|</li>
-        <ul className='contactpage_socialLinks'>
+        <ul className={styles.contactpage_socialLinks}>
           {
             socials.map((item, index) => {
             return (
-              <li key={index} className='contactpage_socialLink'>
+              <li key={index} className={styles.contactpage_socialLink}>
                 <Link to={item.link}>
-                  <img src={item.source} alt={item.alternative} className='contactpage_image'/>
+                  <img src={item.source} alt={item.alternative} className={styles.contactpage_image}/>
                 </Link>
               </li>
             )})

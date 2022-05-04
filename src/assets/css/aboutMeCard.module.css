@@ -1,0 +1,26 @@
+.aboutMeCard {
+  position: absolute;
+  z-index: 10;
+  left: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 209px;
+  height: 252px;
+  background-color: var(--orange-dark);
+  padding-top: 10px;
+}
+
+.aboutMeCard_title {
+  margin: 0;
+  color: var(--white);
+  font-size: 30px;
+  text-align: center;
+}
+
+.aboutMeCard_text {
+  margin: 0;
+  color: var(--white);
+  font-size: 17px;
+  text-align: center;
+}

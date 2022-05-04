@@ -9,6 +9,8 @@ import Typography from '@mui/material/Typography'
 import CardHeader from '@mui/material/CardHeader'
 import Avatar from '@mui/material/Avatar'
 
+import * as styles from '../assets/css/imgMediaCard.module.css'
+
 export const ImgMediaCard = ({item}) => {
 
   const {image, avatarImage, title, text, author, updateDate} = item;
@@ -35,7 +37,7 @@ export const ImgMediaCard = ({item}) => {
         title={author}
         subheader={updateDate.substr(0,10)}
       />}
-      <Link to={`/${slug}`} className='imgMediaCard_link'>
+      <Link to={`/${slug}`} className={styles.imgMediaCard_link}>
         <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {title}

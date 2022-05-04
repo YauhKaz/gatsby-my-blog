@@ -3,22 +3,24 @@ import React from 'react'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 
+import * as styles from '../assets/css/contactForm.module.css'
+
 export const ContactForm = () => {
   return (
-    <div className='contactpage_socials'>
+    <div className={styles.contactpage_socials}>
       <h3>Or just drop me a line here</h3>
-      <form className='contactpage_form'>
-        <div className='contactpage_inputs'>
+      <form className={styles.contactpage_form}>
+        <div className={styles.contactpage_inputs}>
           <TextField id="firstName" label="First Name" variant="outlined" />
           <TextField id="lastName" label="Last Name" variant="outlined" />
         </div>
-        <div className='contactpage_inputs'>
+        <div className={styles.contactpage_inputs}>
           <TextField id="email" label="Email" variant="outlined" required/>
           <TextField id="phone" label="Phone" variant="outlined" />
         </div>
-        <div className='contactpage_textfieldWrapper'>
+        <div className={styles.contactpage_textfieldWrapper}>
           <TextField
-            className='contactpage_textfield'
+            className={styles.contactpage_textfield}
             id="message"
             label="Message"
             multiline
@@ -26,7 +28,7 @@ export const ContactForm = () => {
             defaultValue="Hi"
           />
         </div>
-        <Button variant="contained" className='contactpage_button'>Send</Button>
+        <Button variant="contained" className={styles.contactpage_button}>Send</Button>
       </form>
     </div>
   )
