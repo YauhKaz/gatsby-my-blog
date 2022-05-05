@@ -34,7 +34,7 @@ export default function Home() {
       <>
         <Seo title='Home'/>
         <section className='videoSection'>
-          <Video poster='http://artismedia.by/blog/wp-content/uploads/2018/05/in-blog2-1.png'/>
+          <Video poster='https://funart.pro/uploads/posts/2021-04/1618505319_54-funart_pro-p-oboi-fon-chisto-chyornii-fon-63.jpg'/>
           <AboutMeCard/>
         </section> 
         <FeaturedPost />

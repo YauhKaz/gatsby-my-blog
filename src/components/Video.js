@@ -1,6 +1,6 @@
 import React from 'react'
 
-import video from '../assets/video/test.mp4'
+import video from '../assets/video/video.mp4'
 
 export const Video = ({poster}) => {
   return (

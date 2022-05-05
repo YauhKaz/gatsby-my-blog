@@ -68,3 +68,25 @@
   height: 1px;
   background: var(--white);
 }
+
+@media only screen and (max-width: 601px) {
+  .featurePost_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .featurePost_imageWrapper {
+    width: 100%;
+    display: contents;
+  }
+  
+  .featurePost_textWrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .featurePost {
+    min-height: 470px;
+  }
+}
+
