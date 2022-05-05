@@ -11,6 +11,7 @@ export const HomepageImageList = () => {
   const [buttonView, setButtonView] = useState(true);
 
   const changeHeight = () => {
+    // const addiction = window.innerWidth>576 ? 234 : 175;
     setListHeight(listHeight + 234);
     setButtonView(false);
   }

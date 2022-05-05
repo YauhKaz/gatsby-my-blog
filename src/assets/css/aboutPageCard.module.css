@@ -36,3 +36,19 @@
 .aboutpageCard_button {
   color: var(--white)
 }
+
+
+@media only screen and (max-width: 601px) {
+  .aboutpageCard_wrapper {
+    flex-direction: column;
+  }
+  .aboutpageCard_image {
+    width: 100%;
+  }
+  .aboutpageCard_article {
+    width: 100%;
+  }
+  .aboutpageCard_article button {
+    width: 100%;
+  }
+}

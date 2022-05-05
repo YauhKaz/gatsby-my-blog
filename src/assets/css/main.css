@@ -144,6 +144,7 @@ video {
   position: absolute;
   z-index: 1;
   width: 100%;
+  max-height: 775px;
 }
 .img {
   width: 100%;
@@ -224,7 +225,7 @@ button:hover,
 /*#########*/
 
 .hero{
-  margin-top: 108px;
+  margin-top: 6rem;
   margin-bottom: 20px;
 }
 
@@ -240,18 +241,25 @@ header {
 }
 
 /*#########*/
-/* Main */
+/* Home */
 /*#########*/
 
 .videoSection {
   position: relative;
-  height: calc(100vh);
+  height: 600px;
+}
+
+@media only screen and (max-width: 576px) {
+  .videoSection {
+    height: 400px;
+  }
 }
 
 .recentPosts {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 
 .homepageCardWrapper {
@@ -265,6 +273,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .homepageImageList {
@@ -279,6 +290,13 @@ header {
   position: relative;
   width: 198px;
   height: 198px;
+}
+
+@media only screen and (max-width: 576px) {
+  .homepageImageList_wrapper {
+    width: 202px;
+    height: 202px;
+  }
 }
 
 .homepageImageList_info{
@@ -310,6 +328,9 @@ header {
   color: var(--white);
 }
 
+/*#########*/
+/* About */
+/*#########*/
 
 .about_wrapper{
   display: flex;
@@ -318,12 +339,20 @@ header {
   align-items: center;
 }
 
+/*#########*/
+/* Contact */
+/*#########*/
+
 .contactpage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
+
+/*#########*/
+/* Blog */
+/*#########*/
 
 .blogpage {
   width: 85%;
@@ -340,7 +369,18 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
+
+@media only screen and (max-width: 852px) {
+  .blogpage_cards {
+    flex-direction: column;
+  }
+}
+
+/*#########*/
+/* Template */
+/*#########*/
 
 .templatePage_wrapper{
   width: 95%;
